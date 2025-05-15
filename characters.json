@@ -1,0 +1,18 @@
+{
+  "Luke Skywalker": {
+    "name": "Luke Skywalker",
+    "planet": "Tatooine",
+    "species": "Humano",
+    "films": ["A New Hope", "The Empire Strikes Back", "Return of the Jedi"],
+    "description": "Luke é um cavaleiro Jedi que lutou contra o Império Galáctico.",
+    "image": "images/luke.jpg"
+  },
+  "Darth Vader": {
+    "name": "Darth Vader",
+    "planet": "Tatooine",
+    "species": "Humano",
+    "films": ["A New Hope", "The Empire Strikes Back", "Return of the Jedi"],
+    "description": "Darth Vader, antes Anakin Skywalker, tornou-se um poderoso Sith.",
+    "image": "images/darthvader.jpg"
+  }
+}

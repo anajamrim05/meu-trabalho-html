@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars - Personagens</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="container">
+    <h1>Buscar Personagem</h1>
+
+    <!-- Envolvendo input e sugestões -->
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="Digite o nome do personagem">
+      <div id="suggestions"></div>
+    </div>
+
+    <button id="searchButton">Pesquisar</button>
+    
+    <div id="error" style="display:none; color: red; margin-top: 1rem;"></div>
+
+    <div id="characterInfo" class="character-info" style="display: none;">
+      <img id="characterImage" src="" alt="Imagem do personagem">
+      <h2 id="characterName"></h2>
+      <p><strong>Planeta Natal:</strong> <span id="characterPlanet"></span></p>
+      <p><strong>Espécie:</strong> <span id="characterSpecies"></span></p>
+      <p><strong>Filmes:</strong> <span id="characterMovies"></span></p>
+      <p><strong>Descrição:</strong> <span id="characterDescription"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
