@@ -3,16 +3,80 @@
     "name": "Luke Skywalker",
     "planet": "Tatooine",
     "species": "Humano",
-    "films": ["A New Hope", "The Empire Strikes Back", "Return of the Jedi"],
-    "description": "Luke é um cavaleiro Jedi que lutou contra o Império Galáctico.",
+    "films": ["Episódio IV", "Episódio V", "Episódio VI", "Episódio VII", "Episódio VIII", "Episódio IX"],
+    "description": "Filho de Anakin Skywalker (Darth Vader) e Padmé Amidala, Luke é um dos Jedi mais poderosos da galáxia. Criado em Tatooine, ele se junta à Aliança Rebelde para combater o Império Galáctico.",
     "image": "images/luke.jpg"
   },
+  "Leia Organa": {
+    "name": "Leia Organa",
+    "planet": "Alderaan",
+    "species": "Humana",
+    "films": ["Episódio IV", "Episódio V", "Episódio VI", "Episódio VII", "Episódio VIII", "Episódio IX"],
+    "description": "Irmã gêmea de Luke Skywalker, filha de Anakin Skywalker e Padmé Amidala. Princesa de Alderaan, líder da Aliança Rebelde e, posteriormente, da Resistência.",
+    "image": "images/leia.jpg"
+  },
   "Darth Vader": {
-    "name": "Darth Vader",
+    "name": "Darth Vader (Anakin Skywalker)",
     "planet": "Tatooine",
     "species": "Humano",
-    "films": ["A New Hope", "The Empire Strikes Back", "Return of the Jedi"],
-    "description": "Darth Vader, antes Anakin Skywalker, tornou-se um poderoso Sith.",
+    "films": ["Episódio I", "Episódio II", "Episódio III", "Episódio IV", "Episódio V", "Episódio VI"],
+    "description": "Originalmente Anakin Skywalker, um Jedi talentoso que sucumbe ao lado sombrio da Força, tornando-se Darth Vader, aprendiz de Darth Sidious.",
     "image": "images/darthvader.jpg"
+  },
+  "Yoda": {
+    "name": "Yoda",
+    "planet": "Desconhecido",
+    "species": "Desconhecida",
+    "films": ["Episódio I", "Episódio II", "Episódio III", "Episódio V", "Episódio VI", "Episódio VIII"],
+    "description": "Um dos mais sábios e poderosos Mestres Jedi, líder do Conselho Jedi durante a República Galáctica.",
+    "image": "images/yoda.jpg"
+  },
+  "Obi-Wan Kenobi": {
+    "name": "Obi-Wan Kenobi",
+    "planet": "Stewjon",
+    "species": "Humano",
+    "films": ["Episódio I", "Episódio II", "Episódio III", "Episódio IV"],
+    "description": "Mestre Jedi que treinou Anakin Skywalker e, mais tarde, seu filho Luke. Conhecido por sua sabedoria e habilidades com a Força.",
+    "image": "images/obiwan.jpg"
+  },
+  "Han Solo": {
+    "name": "Han Solo",
+    "planet": "Corellia",
+    "species": "Humano",
+    "films": ["Episódio IV", "Episódio V", "Episódio VI", "Episódio VII", "Solo: Uma História Star Wars"],
+    "description": "Contrabandista carismático que se torna herói da Aliança Rebelde. Piloto da Millennium Falcon e parceiro de Chewbacca.",
+    "image": "images/hansolo.jpg"
+  },
+  "Chewbacca": {
+    "name": "Chewbacca",
+    "planet": "Kashyyyk",
+    "species": "Wookiee",
+    "films": ["Episódio III", "Episódio IV", "Episódio V", "Episódio VI", "Episódio VII", "Episódio VIII", "Episódio IX", "Solo: Uma História Star Wars"],
+    "description": "Co-piloto da Millennium Falcon e fiel amigo de Han Solo. Conhecido por sua força e lealdade.",
+    "image": "images/chewbacca.jpg"
+  },
+  "Rey": {
+    "name": "Rey",
+    "planet": "Jakku",
+    "species": "Humana",
+    "films": ["Episódio VII", "Episódio VIII", "Episódio IX"],
+    "description": "Catadora de sucata que descobre sua conexão com a Força. Torna-se a última Jedi e enfrenta o ressurgimento do lado sombrio.",
+    "image": "images/rey.jpg"
+  },
+  "Finn": {
+    "name": "Finn",
+    "planet": "Desconhecido",
+    "species": "Humano",
+    "films": ["Episódio VII", "Episódio VIII", "Episódio IX"],
+    "description": "Ex-stormtrooper da Primeira Ordem que se junta à Resistência após questionar suas ordens.",
+    "image": "images/finn.jpg"
+  },
+  "Kylo Ren": {
+    "name": "Kylo Ren (Ben Solo)",
+    "planet": "Chandrila",
+    "species": "Humano",
+    "films": ["Episódio VII", "Episódio VIII", "Episódio IX"],
+    "description": "Filho de Han Solo e Leia Organa, neto de Darth Vader. Inicialmente um Cavaleiro de Ren, luta entre o lado sombrio e a luz da Força.",
+    "image": "images/kyloren.jpg"
   }
 }

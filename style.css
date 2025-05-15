@@ -1,25 +1,36 @@
+/* Canvas atrás, cobrindo tudo */
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: black;
+}
+
+/* Corpo */
 body {
   margin: 0;
   padding: 0;
-  background: url('images/satrwarsfundo.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   color: white;
+  background: transparent;
+  padding-bottom: 100px;
 }
 
-
-
+/* Container principal */
 .container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
+  position: relative;
+  z-index: 10;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
-  margin-top: 50px;
 }
 
-input[type="text"] {
+/* Input */
+#searchInput {
   padding: 10px;
   width: 80%;
   border: none;
@@ -33,71 +44,123 @@ input[type="text"] {
   margin: 0 auto;
 }
 
-.search-wrapper input {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
+
+/* Botão */
+#searchButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #222;
+  border: 1px solid #555;
   border-radius: 5px;
-  border: none;
-}
-
-#suggestions {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background: black;
-  border: 1px solid #ccc;
-  border-top: none;
   color: white;
-  max-height: 150px;
-  overflow-y: auto;
-  z-index: 999;
-  border-radius: 0 0 5px 5px;
-}
-
-
-
-#suggestions div {
-  padding: 10px;
   cursor: pointer;
 }
+#searchButton:hover {
+  background: #444;
+}
 
-#suggestions div:hover {
+/* Sugestões */
+#suggestions {
+  margin: 10px auto;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 5px;
+  max-width: 320px;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+  text-align: left;
+}
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.suggestion-item:hover {
   background: #333;
 }
 
-button {
-  padding: 10px 20px;
-  margin-left: 10px;
-  background-color: #ffc107;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+/* Erro */
+#error {
+  color: #ff5555;
+  margin-top: 10px;
+  min-height: 20px;
 }
 
-.character-info {
+/* Info personagem */
+#characterInfo {
   margin-top: 2rem;
   text-align: left;
+  max-width: 600px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
 }
-
-.character-info img {
+#characterInfo img {
   max-width: 150px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-family: 'Star Jedi', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+
+/* Timeline */
+.timeline-title {
+  margin-top: 60px;
+  font-size: 24px;
+  text-align: center;
 }
-#starfield {
-  position: fixed;
-  top: 0;
-  left: 0;
+.timeline-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.timeline-item {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: 300px;
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #222;
+  cursor: pointer;
+  overflow: hidden;
+}
+.timeline-item img {
   width: 100%;
   height: 100%;
-  z-index: -1;
-  background: black;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.timeline-item:hover img {
+  transform: scale(1.1);
+}
+.timeline-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  overflow-y: auto;
+}
+.timeline-item:hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+.timeline-item .overlay::-webkit-scrollbar {
+  width: 5px;
+}
+.timeline-item .overlay::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
 }
