@@ -3,158 +3,244 @@
 // ======================
 const charactersData = {
   "Luke Skywalker": {
-    name: "Luke Skywalker",
-    planet: "Tatooine",
-    species: "Humano",
-    films: ["Episódios IV", "V", "VI", "VII", "VIII", "IX"],
-    description: "Filho de Anakin Skywalker e Padmé Amidala, um dos últimos Jedi.",
-    image: "images/luke.jpg"
-  },
-  "Leia Organa": {
-    name: "Leia Organa",
-    planet: "Alderaan",
-    species: "Humana",
-    films: ["Episódios IV", "V", "VI", "VII", "VIII", "IX"],
-    description: "Irmã gêmea de Luke, líder da Aliança Rebelde.",
-    image: "images/leia.jpg"
-  },
-  "Darth Vader": {
-    name: "Darth Vader",
-    planet: "Tatooine",
-    species: "Humano",
-    films: ["Episódios I", "II", "III", "IV", "V", "VI"],
-    description: "Originalmente Anakin Skywalker, tornou-se um Sith Lord.",
-    image: "images/darthvader.jpg"
-  },
-  "Obi-Wan Kenobi": {
-    name: "Obi-Wan Kenobi",
-    planet: "Stewjon",
-    species: "Humano",
-    films: ["Episódios I", "II", "III", "IV"],
-    description: "Mestre Jedi que treinou Anakin e Luke Skywalker.",
-    image: "images/obiwankenobi.jpg"
-  },
-  "Yoda": {
-    name: "Yoda",
-    planet: "Desconhecido",
-    species: "Desconhecida",
-    films: ["Episódios I", "II", "III", "V", "VI", "VIII"],
-    description: "Mestre Jedi sábio e poderoso, líder do Conselho Jedi.",
-    image: "images/yoda.jpg"
-  },
-  "Anakin Skywalker": {
-    name: "Anakin Skywalker",
-    planet: "Tatooine",
-    species: "Humano",
-    films: ["Episódios I", "II", "III"],
-    description: "Jovem Jedi que sucumbe ao lado negro e vira Darth Vader.",
-    image: "images/anakin.jpg"
-  },
-  "Han Solo": {
-    name: "Han Solo",
-    planet: "Corellia",
-    species: "Humano",
-    films: ["Episódios IV", "V", "VI", "VII"],
-    description: "Contrabandista e herói da Aliança Rebelde.",
-    image: "images/hansolo.jpg"
-  },
-  "Chewbacca": {
-    name: "Chewbacca",
-    planet: "Kashyyyk",
-    species: "Wookiee",
-    films: ["Episódios III", "IV", "V", "VI", "VII"],
-    description: "Companheiro fiel de Han Solo e guerreiro Wookiee.",
-    image: "images/chewbacca.jpg"
-  },
-  "Rey": {
-    name: "Rey",
-    planet: "Jakku",
-    species: "Humana",
-    films: ["Episódios VII", "VIII", "IX"],
-    description: "Jedi que busca seu passado e enfrenta a Primeira Ordem.",
-    image: "images/rey.jpg"
-  },
-  "Kylo Ren": {
-    name: "Kylo Ren",
-    planet: "Desconhecido",
-    species: "Humano",
-    films: ["Episódios VII", "VIII", "IX"],
-    description: "Filho de Leia e Han, seduzido pelo lado negro.",
-    image: "images/kyloren.jpg"
-  },
-  "Ahsoka Tano": {
-    name: "Ahsoka Tano",
-    planet: "Shili",
-    species: "Togruta",
-    films: ["The Clone Wars", "Rebels", "The Mandalorian"],
-    description: "Aprendiz de Anakin que se torna uma guerreira independente.",
-    image: "images/ahsoka.jpg"
-  },
-  "Mace Windu": {
-    name: "Mace Windu",
-    planet: "Haruun Kal",
-    species: "Humano",
-    films: ["Episódios I", "II", "III"],
-    description: "Membro do Conselho Jedi, conhecido por sua sabre roxo.",
-    image: "images/macewindu.jpg"
-  },
-  "Darth Maul": {
-    name: "Darth Maul",
-    planet: "Dathomir",
-    species: "Zabrak",
-    films: ["Episódio I", "The Clone Wars", "Rebels"],
-    description: "Sith Lord com sabre duplo, inimigo de Obi-Wan Kenobi.",
-    image: "images/darthmaul.jpg"
-  },
-  "Jyn Erso": {
-    name: "Jyn Erso",
-    planet: "Desconhecido",
-    species: "Humana",
-    films: ["Rogue One"],
-    description: "Líder da missão para roubar os planos da Estrela da Morte.",
-    image: "images/jynerso.jpg"
-  },
-  "Cassian Andor": {
-    name: "Cassian Andor",
-    planet: "Desconhecido",
-    species: "Humano",
-    films: ["Rogue One", "Andor (série)"],
-    description: "Oficial rebelde dedicado à causa da Aliança.",
-    image: "images/cassianandor.jpg"
-  },
-  "Bo-Katan Kryze": {
-    name: "Bo-Katan Kryze",
-    planet: "Kryze",
-    species: "Togruta",
-    films: ["The Clone Wars", "Rebels", "The Mandalorian"],
-    description: "Líder Mandaloriana e guerreira habilidosa.",
-    image: "images/bokatan.jpg"
-  },
-  "Din Djarin (Mandalorian)": {
-    name: "Din Djarin",
-    planet: "Desconhecido",
-    species: "Humano",
-    films: ["The Mandalorian"],
-    description: "Caçador de recompensas Mandaloriano protagonista da série.",
-    image: "images/mandalorian.jpg"
-  },
-  "Grand Admiral Thrawn": {
-    name: "Grand Admiral Thrawn",
-    planet: "Csilla",
-    species: "Chiss",
-    films: ["Rebels"],
-    description: "Estratégista brilhante e líder imperial.",
-    image: "images/thrawn.jpg"
-  },
-  "Palpatine (Darth Sidious)": {
-    name: "Palpatine",
-    planet: "Naboo",
-    species: "Humano",
-    films: ["Episódios I", "II", "III", "VI", "IX"],
-    description: "Senador e Sith Lord que se torna Imperador do Império.",
-    image: "images/palpatine.jpg"
+  name: "Luke Skywalker",
+  planet: "Tatooine",
+  species: "Humano",
+  films: [
+    "Episódio IV – Uma Nova Esperança",
+    "Episódio V – O Império Contra-Ataca",
+    "Episódio VI – O Retorno de Jedi",
+    "Episódio VII – O Despertar da Força",
+    "Episódio VIII – Os Últimos Jedi",
+    "Episódio IX – A Ascensão Skywalker"
+  ],
+  description: "Filho de Anakin Skywalker e Padmé Amidala, um dos últimos Jedi.",
+  image: "images/luke.jpg"
+},
+"Leia Organa": {
+  name: "Leia Organa",
+  planet: "Alderaan",
+  species: "Humana",
+  films: [
+    "Episódio IV – Uma Nova Esperança",
+    "Episódio V – O Império Contra-Ataca",
+    "Episódio VI – O Retorno de Jedi",
+    "Episódio VII – O Despertar da Força",
+    "Episódio VIII – Os Últimos Jedi",
+    "Episódio IX – A Ascensão Skywalker"
+  ],
+  description: "Irmã gêmea de Luke, líder da Aliança Rebelde.",
+  image: "images/leia.jpg"
+},
+"Darth Vader": {
+  name: "Darth Vader",
+  planet: "Tatooine",
+  species: "Humano",
+  films: [
+    "Episódio I – A Ameaça Fantasma",
+    "Episódio II – Ataque dos Clones",
+    "Episódio III – A Vingança dos Sith",
+    "Episódio IV – Uma Nova Esperança",
+    "Episódio V – O Império Contra-Ataca",
+    "Episódio VI – O Retorno de Jedi"
+  ],
+  description: "Originalmente Anakin Skywalker, tornou-se um Sith Lord.",
+  image: "images/darthvader.jpg"
+},
+"Obi-Wan Kenobi": {
+  name: "Obi-Wan Kenobi",
+  planet: "Stewjon",
+  species: "Humano",
+  films: [
+    "Episódio I – A Ameaça Fantasma",
+    "Episódio II – Ataque dos Clones",
+    "Episódio III – A Vingança dos Sith",
+    "Episódio IV – Uma Nova Esperança",
+    "Obi-Wan Kenobi (Série)"
+  ],
+  description: "Mestre Jedi que treinou Anakin e Luke Skywalker.",
+  image: "images/obiwankenobi.jpg"
+},
+"Yoda": {
+  name: "Yoda",
+  planet: "Desconhecido",
+  species: "Desconhecida",
+  films: [
+    "Episódio I – A Ameaça Fantasma",
+    "Episódio II – Ataque dos Clones",
+    "Episódio III – A Vingança dos Sith",
+    "Episódio V – O Império Contra-Ataca",
+    "Episódio VI – O Retorno de Jedi",
+    "Episódio VIII – Os Últimos Jedi"
+  ],
+  description: "Mestre Jedi sábio e poderoso, líder do Conselho Jedi.",
+  image: "images/yoda.jpg"
+},
+"Anakin Skywalker": {
+  name: "Anakin Skywalker",
+  planet: "Tatooine",
+  species: "Humano",
+  films: [
+    "Episódio I – A Ameaça Fantasma",
+    "Episódio II – Ataque dos Clones",
+    "Episódio III – A Vingança dos Sith",
+    "Star Wars: The Clone Wars (Série)"
+  ],
+  description: "Jovem Jedi que sucumbe ao lado negro e vira Darth Vader.",
+  image: "images/anakin.jpg"
+},
+"Han Solo": {
+  name: "Han Solo",
+  planet: "Corellia",
+  species: "Humano",
+  films: [
+    "Episódio IV – Uma Nova Esperança",
+    "Episódio V – O Império Contra-Ataca",
+    "Episódio VI – O Retorno de Jedi",
+    "Episódio VII – O Despertar da Força"
+  ],
+  description: "Contrabandista e herói da Aliança Rebelde.",
+  image: "images/hansolo.jpg"
+},
+"Chewbacca": {
+  name: "Chewbacca",
+  planet: "Kashyyyk",
+  species: "Wookiee",
+  films: [
+    "Episódio III – A Vingança dos Sith",
+    "Episódio IV – Uma Nova Esperança",
+    "Episódio V – O Império Contra-Ataca",
+    "Episódio VI – O Retorno de Jedi",
+    "Episódio VII – O Despertar da Força"
+  ],
+  description: "Companheiro fiel de Han Solo e guerreiro Wookiee.",
+  image: "images/chewbacca.jpg"
+},
+"Rey": {
+  name: "Rey",
+  planet: "Jakku",
+  species: "Humana",
+  films: [
+    "Episódio VII – O Despertar da Força",
+    "Episódio VIII – Os Últimos Jedi",
+    "Episódio IX – A Ascensão Skywalker"
+  ],
+  description: "Jedi que busca seu passado e enfrenta a Primeira Ordem.",
+  image: "images/rey.jpg"
+},
+"Kylo Ren": {
+  name: "Kylo Ren",
+  planet: "Desconhecido",
+  species: "Humano",
+  films: [
+    "Episódio VII – O Despertar da Força",
+    "Episódio VIII – Os Últimos Jedi",
+    "Episódio IX – A Ascensão Skywalker"
+  ],
+  description: "Filho de Leia e Han, seduzido pelo lado negro.",
+  image: "images/kyloren.jpg"
+},
+"Ahsoka Tano": {
+  name: "Ahsoka Tano",
+  planet: "Shili",
+  species: "Togruta",
+  films: [
+    "Star Wars: The Clone Wars (Série)",
+    "Star Wars Rebels (Série)",
+    "The Mandalorian (Série)",
+    "Ahsoka (Série)",
+    "Tales of the Jedi (Série)"
+  ],
+  description: "Aprendiz de Anakin que se torna uma guerreira independente.",
+  image: "images/Ahsoka(1).jpg"
+},
+"Mace Windu": {
+  name: "Mace Windu",
+  planet: "Haruun Kal",
+  species: "Humano",
+  films: [
+    "Episódio I – A Ameaça Fantasma",
+    "Episódio II – Ataque dos Clones",
+    "Episódio III – A Vingança dos Sith"
+  ],
+  description: "Membro do Conselho Jedi, conhecido por sua sabre roxo.",
+  image: "images/macewindu.jpg"
+},
+"Darth Maul": {
+  name: "Darth Maul",
+  planet: "Dathomir",
+  species: "Zabrak",
+  films: [
+    "Episódio I – A Ameaça Fantasma",
+    "Star Wars: The Clone Wars (Série)",
+    "Star Wars Rebels (Série)"
+  ],
+  description: "Sith Lord com sabre duplo, inimigo de Obi-Wan Kenobi.",
+  image: "images/darthmaul.jpg"
+},
+"Jyn Erso": {
+  name: "Jyn Erso",
+  planet: "Desconhecido",
+  species: "Humana",
+  films: ["Rogue One"],
+  description: "Líder da missão para roubar os planos da Estrela da Morte.",
+  image: "images/jynerso.jpg"
+},
+"Cassian Andor": {
+  name: "Cassian Andor",
+  planet: "Desconhecido",
+  species: "Humano",
+  films: [
+    "Rogue One",
+    "Andor (Série)"
+  ],
+  description: "Oficial rebelde dedicado à causa da Aliança.",
+  image: "images/cassianandor.jpg"
+},
+"Bo-Katan Kryze": {
+  name: "Bo-Katan Kryze",
+  planet: "Kryze",
+  species: "Togruta",
+  films: [
+    "Star Wars: The Clone Wars (Série)",
+    "Star Wars Rebels (Série)",
+    "The Mandalorian (Série)"
+  ],
+  description: "Líder Mandaloriana e guerreira habilidosa.",
+  image: "images/bokatan.jpg"
+},
+"Din Djarin (Mandalorian)": {
+  name: "Din Djarin",
+  planet: "Desconhecido",
+  species: "Humano",
+  films: ["The Mandalorian (Série)"],
+  description: "Caçador de recompensas Mandaloriano protagonista da série.",
+  image: "images/mandalorian1.jpg"
+},
+"Grand Admiral Thrawn": {
+  name: "Grand Admiral Thrawn",
+  planet: "Csilla",
+  species: "Chiss",
+  films: ["Star Wars Rebels (Série)"],
+  description: "Estratégista brilhante e líder imperial.",
+  image: "images/thrawn.jpg"
+},
+"Palpatine (Darth Sidious)": {
+  name: "Palpatine",
+  planet: "Naboo",
+  species: "Humano",
+  films: [
+    "Episódio I – A Ameaça Fantasma",
+    "Episódio II – Ataque dos Clones",
+    "Episódio III – A Vingança dos Sith",
+    "Episódio VI – O Retorno de Jedi",
+    "Episódio IX – A Ascensão Skywalker"
+  ],
+  description: "Senador e Sith Lord que se torna Imperador do Império.",
+  image: "images/palpatine.jpg"
+}
+
   }
-};
 
 
 // ===================
@@ -399,7 +485,76 @@ function createTimeline() {
     card.appendChild(img);
     card.appendChild(overlay);
     timelineContainer.appendChild(card);
+ card.addEventListener('click', () => {
+      const characters = getCharactersByFilm(film.title);
+
+      filmDetails.innerHTML = `
+        <h3>${film.title} (${film.year})</h3>
+        <p>${film.description}</p>
+        <h4>Personagens relacionados:</h4>
+        <div id="filmCharacters">
+          ${characters.length > 0
+            ? characters.map(char => `<div class="film-character">${char.name}</div>`).join('')
+            : '<p>Nenhum personagem listado.</p>'
+          }
+        </div>
+      `;
+      filmDetails.style.display = 'block';
+      filmDetails.scrollIntoView({ behavior: 'smooth' });
+    });
   });
 }
 
 createTimeline();
+
+
+// ===============================
+// Mostrar detalhes do filme clicado com imagem grande e personagens
+// ===============================
+const filmDetails = document.getElementById('filmDetails');
+
+function getCharactersByFilm(title) {
+  return Object.values(charactersData).filter(char =>
+    char.films.some(filmTitle => filmTitle.toLowerCase().includes(title.toLowerCase()))
+  );
+}
+
+timelineContainer.querySelectorAll('.timeline-item').forEach(card => {
+  card.addEventListener('click', () => {
+    const filmTitle = card.querySelector('.overlay h3').textContent;
+    const film = timelineData.find(f => f.title === filmTitle);
+    if (!film) return;
+
+    const characters = getCharactersByFilm(filmTitle);
+
+    filmDetails.innerHTML = `
+      <div class="film-header">
+        <img class="film-large-image" src="${film.image}" alt="${film.title}" />
+        <div class="film-info">
+          <h3>${film.title} (${film.year})</h3>
+          <p>${film.description}</p>
+        </div>
+      </div>
+      <h4>Personagens relacionados:</h4>
+      <div class="film-characters-gallery">
+        ${characters.map(char => `
+          <div class="character-thumbnail" title="${char.name}">
+            <img src="${char.image}" alt="${char.name}" />
+            <p>${char.name}</p>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    filmDetails.style.display = 'block';
+    filmDetails.scrollIntoView({ behavior: 'smooth' });
+
+    // Adiciona evento aos personagens clicáveis
+    filmDetails.querySelectorAll('.character-thumbnail').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const characterName = thumb.querySelector('p').textContent;
+        showCharacter(characterName);
+        document.getElementById('characterInfo').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  });
+});
