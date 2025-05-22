@@ -78,5 +78,13 @@
     "films": ["Episódio VII", "Episódio VIII", "Episódio IX"],
     "description": "Filho de Han Solo e Leia Organa, neto de Darth Vader. Inicialmente um Cavaleiro de Ren, luta entre o lado sombrio e a luz da Força.",
     "image": "images/kyloren.jpg"
+  },
+  "Padmé Amídala": {
+    "name": "Padmé Amídala",
+    "planet": "Naboo",
+    "species": "Humano",
+    "films": ["Episódio I", "Episódio II", "Episódio III","The Clone Wars"],
+    "description": "Filho de Han Solo e Leia Organa, neto de Darth Vader. Inicialmente um Cavaleiro de Ren, luta entre o lado sombrio e a luz da Força.",
+    "image": "images/kyloren.jpg"
   }
 }

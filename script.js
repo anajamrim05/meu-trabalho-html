@@ -344,13 +344,13 @@ const timelineData = [
   {
     title: "Episódio I – A Ameaça Fantasma",
     year: 1999,
-    description: "Qui-Gon e Obi-Wan protegem Amidala e encontram Anakin.",
+    description: "Situado 32 anos antes dos eventos do Episódio I - Uma nova esperança, o filme apresenta a República Galáctica enfrentando uma crise política. O Mestre Jedi Qui-Gon Jinn e seu aprendiz Obi-Wan Kenobi são enviados para negociar com a Federação do Comércio, que impôs um bloqueio ao planeta Naboo. Descobrindo que a Federação está sob a influência do misterioso Lorde Sith Darth Sidious, os Jedi resgatam a Rainha Padmé Amidala e fogem para Tatooine, onde encontram Anakin Skywalker, um jovem escravo com uma afinidade incomum com a Força. Após vencer uma corrida de pods, Anakin é libertado e levado para treinamento Jedi. Enquanto isso, Darth Maul, aprendiz de Sidious, confronta os Jedi, resultando na morte de Qui-Gon. Obi-Wan derrota Maul e promete treinar Anakin, apesar das reservas do Conselho Jedi.Qui-Gon e Obi-Wan protegem Amidala e encontram Anakin.",
     image: "images/ep1.jpg"
   },
   {
     title: "Episódio II – Ataque dos Clones",
     year: 2002,
-    description: "Obi-Wan investiga uma conspiração e Anakin se aproxima de Padmé.",
+    description: "Dez anos após os eventos anteriores, a galáxia está à beira da guerra civil. A Senadora Padmé Amidala sobrevive a uma tentativa de assassinato e é protegida por Anakin Skywalker, agora um aprendiz Jedi. Enquanto desenvolvem um romance proibido, Obi-Wan investiga a origem do atentado, levando-o a descobrir um exército de clones encomendado em nome dos Jedi. A investigação revela que o Conde Dookan, um ex-Jedi, lidera os separatistas e planeja uma guerra contra a República. Em Geonosis, Anakin, Padmé e Obi-Wan são capturados, mas são resgatados por Jedi e clones liderados por Yoda. A batalha marca o início das Guerras Clônicas. Anakin perde um braço em duelo com Dookan e, posteriormente, casa-se secretamente com Padmé.",
     image: "images/ep2.jpg"
   },
   {
@@ -362,7 +362,7 @@ const timelineData = [
   {
     title: "Episódio III – A Vingança dos Sith",
     year: 2005,
-    description: "Anakin vira Darth Vader e o Império surge.",
+    description: "Três anos após o início das Guerras Clônicas, Anakin Skywalker é atormentado por visões da morte de Padmé. O Chanceler Palpatine, na verdade o Lorde Sith Darth Sidious, manipula Anakin, prometendo-lhe poder para salvar Padmé. Anakin sucumbe ao lado sombrio, tornando-se Darth Vader, e ajuda Sidious a executar a Ordem 66, exterminando a maioria dos Jedi. Obi-Wan confronta Anakin em Mustafar, derrotando-o e deixando-o gravemente ferido. Padmé dá à luz gêmeos, Luke e Leia, antes de morrer. Vader é resgatado por Sidious e transformado em um ser cibernético. Os gêmeos são separados e escondidos para protegê-los do Império.",
     image: "images/ep3.jpg"
   },
   {
@@ -392,19 +392,19 @@ const timelineData = [
   {
     title: "Episódio IV – Uma Nova Esperança",
     year: 1977,
-    description: "Luke inicia sua jornada e se junta à Rebelião.",
+    description: "Dezenove anos após a ascensão do Império, a Princesa Leia Organa é capturada por Darth Vader enquanto tenta entregar os planos da Estrela da Morte à Aliança Rebelde. Antes de ser capturada, ela esconde os planos no droide R2-D2, que, junto com C-3PO, acaba em Tatooine. Os droides são encontrados por Luke Skywalker, que, após a morte de seus tios, se junta a Obi-Wan Kenobi para entregar os planos à Rebelião. Com a ajuda de Han Solo e Chewbacca, eles resgatam Leia e levam os planos aos rebeldes. Luke participa do ataque à Estrela da Morte e, usando a Força, consegue destruí-la.",
     image: "images/ep4.jpg"
   },
   {
     title: "Episódio V – O Império Contra-Ataca",
     year: 1980,
-    description: "Luke treina com Yoda enquanto a Rebelião recua.",
+    description: "Após a destruição da Estrela da Morte, o Império persegue a Aliança Rebelde até a base em Hoth. Os rebeldes são forçados a fugir, e Luke viaja para Dagobah para treinar com o Mestre Yoda. Enquanto isso, Han, Leia, Chewbacca e C-3PO buscam refúgio na Cidade das Nuvens, governada por Lando Calrissian. Lá, são traídos por Lando, que entrega Han a Vader. Han é congelado em carbonita e entregue a Boba Fett. Luke confronta Vader, que revela ser seu pai. Luke escapa, e a Aliança planeja resgatar Han.",
     image: "images/ep5.jpg"
   },
   {
     title: "Episódio VI – O Retorno de Jedi",
     year: 1983,
-    description: "Conflito final entre a Rebelião e o Império.",
+    description: "Luke Skywalker lidera uma missão para resgatar Han Solo de Jabba, o Hutt. Após o resgate, a Aliança Rebelde descobre que o Império está construindo uma nova Estrela da Morte. Luke retorna a Dagobah, onde Yoda confirma que Vader é seu pai e revela que Leia é sua irmã. Os rebeldes lançam um ataque à nova estação espacial, enquanto Luke confronta Vader e o Imperador Palpatine. Vader se redime ao salvar Luke, matando o Imperador, mas morre em seguida. A Estrela da Morte é destruída, e a galáxia celebra a queda do Império.",
     image: "images/ep6.jpg"
   },
   {
@@ -428,19 +428,19 @@ const timelineData = [
   {
     title: "Episódio VII – O Despertar da Força",
     year: 2015,
-    description: "A Primeira Ordem ameaça e novos heróis surgem.",
+    description: "Trinta anos após a derrota do Império, surge a Primeira Ordem, liderada por Kylo Ren. A Resistência, liderada por Leia Organa, busca encontrar Luke Skywalker, desaparecido há anos. Poe Dameron obtém um mapa para localizar Luke, mas é capturado. O mapa é escondido no droide BB-8, que encontra a catadora Rey. Rey, Finn (um stormtrooper desertor), Han Solo e Chewbacca se unem para entregar o mapa à Resistência. Kylo Ren mata Han Solo e captura Rey, que descobre sua conexão com a Força. Rey confronta Kylo Ren e, com a ajuda da Resistência, busca encontrar Luke.",
     image: "images/ep7.jpg"
   },
   {
     title: "Episódio VIII – Os Últimos Jedi",
     year: 2017,
-    description: "Rey busca Luke e enfrenta desafios com Kylo Ren.",
+    description: "Rey encontra Luke Skywalker em Ahch-To e busca treinamento Jedi. Luke, relutante, revela que tentou treinar Ben Solo, que se tornou Kylo Ren. Enquanto isso, a Resistência é perseguida pela Primeira Ordem. Rey tenta trazer Kylo de volta à luz, mas ele mata o Líder Supremo Snoke e assume o controle da Primeira Ordem. Luke confronta Kylo em Crait, usando uma projeção da Força para permitir que a Resistência escape. O esforço leva à morte de Luke, que se une à Força",
     image: "images/ep8.jpg"
   },
   {
     title: "Episódio IX – A Ascensão Skywalker",
     year: 2019,
-    description: "O confronto final entre Resistência e Sith.",
+    description: "A galáxia enfrenta uma nova ameaça com o retorno do Imperador Palpatine, que revela ter manipulado os eventos desde as sombras. Rey continua seu treinamento Jedi e descobre ser neta de Palpatine. A Resistência se une para enfrentar a ameaça final da Primeira Ordem. Em uma batalha climática, Rey confronta Palpatine, com a ajuda dos Jedi do passado, e o derrota. Ben Solo se redime, sacrificando-se para salvar Rey. A galáxia celebra a vitória, e Rey adota o nome Skywalker, honrando seus mestres.",
     image: "images/ep9.jpg"
   },
   {
